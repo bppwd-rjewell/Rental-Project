@@ -1,0 +1,28 @@
+nav{
+	background-color: #FF6517 !important;
+	border: 0px !important;
+}
+
+nav li a{
+	color: white !important;
+}
+
+nav li:hover{
+	background-color: #ed5e17;
+}
+
+nav .navbar-brand{
+	padding: 5px 10px;
+}
+
+nav .navbar-brand img{
+	height: 100%;
+}
+
+nav .navbar-toggle .icon-bar{
+	background-color: white !important;
+}
+
+nav .navbar-right{
+	padding-right: 30px;
+}

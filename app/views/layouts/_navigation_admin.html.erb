@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rent-An-Orange</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="shortcut icon" type="image/png" href="../../assets/logos/orange-logo-icon.png">
+</head>
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="/"><img src="../../assets/logos/orange-logo-icon.png"></a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="/">Home</a></li>
+	        <li><a href="/admin/index">Admin</a></li>
+	        <li><a href="/products/">Products</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><%= link_to("Logout", destroy_user_session_path, :method => :delete)%></li>
+	      </ul>
+	  </div><!-- /.container-fluid -->
+	</nav>

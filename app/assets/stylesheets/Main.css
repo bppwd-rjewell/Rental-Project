@@ -1,0 +1,24 @@
+html{
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+	padding-top: 80px;
+}
+
+#main-content{
+	margin: 10px 0px;
+	margin: 0 0 80px;
+}
+
+footer{
+	position: absolute;
+	color: white;
+	width: 100%;
+	bottom: 0;
+	padding-top: 20px;
+	background-color: #FF6517;
+	text-align: center;
+	height: 60px;
+}
